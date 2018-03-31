@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dan.simplesms.View.TulisSMSActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_weight="1">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="To"/>
+        <EditText
+            android:id="@+id/edit_contact_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="18">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">Your Text Here</ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="+"
+            android:textColor="@color/colorWhite"
+            android:background="@color/colorPrimaryDark"
+            android:textSize="16dp"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/edit_message"
+            android:background="@color/colorWhite"
+            android:layout_weight="8"
+            android:textColor="@color/colorMessageText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:verticalScrollbarPosition="right"
+            android:hint="Text messages"
+            android:maxHeight="250dip"
+            android:tooltipText="Text Message"
+            />
+
+        <Button
+            android:id="@+id/btn_sendSMS"
+            android:text="SEND"
+            android:textColor="@color/colorWhite"
+            android:textSize="18dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_weight="2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
